@@ -1,8 +1,15 @@
 <?php
-header("Content-Type: text/html : charset=utf-8");
 
-require_once ("../src/vendor/autoload.php");
-use app\teste;
+require_once("../src/vendor/autoload.php");
+require_once("../config/config.php");
 
-$teste = new teste();
+use src\classes\ClassRoutes;
+
+class Teste extends ClassRoutes{
+        public function __construct(){
+            $v=$this->getRota();
+            var_dump($v);
+        }
+}
+$new = new Teste();
 ?>
