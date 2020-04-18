@@ -9,7 +9,6 @@ class ClassRoutes{
 
     private $Rota;
 
-    #Método de retorno da rota
     public function getRota(){
         $Url=$this->parseUrl();
         $I=$Url[0];
@@ -17,7 +16,8 @@ class ClassRoutes{
         $this->Rota=array(
             ""=>"ControllerHome",
             "home"=>"ControllerHome",
-            "sitemap"=>"ControllerSitemap"
+            "sitemap"=>"ControllerSitemap",
+            "carro" => "ControllerCarros"
         );
 
         if(array_key_exists($I,$this->Rota)){
@@ -27,7 +27,7 @@ class ClassRoutes{
                 return "ControllerHome";
             }
         }else{
-            return "ControllerHome";
+            return "Controller404";
         }
     }
 }
