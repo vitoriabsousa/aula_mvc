@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    width: 100%;
+    height: 500px;
+}
+
+.Header .Main {
+    float: left;
+    width: 100%;
+}
+
+.Footer {
+    position: absolute;
+    top: 600px;
+    width: 100%;
+    height: 100px;
+    background: lightblue;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Nav {
+    float: left;
+    width: 100%;
+    background: coral;
+    color: black;
+    text-align: center;
+}
+
+.Nav a {
+    color: black;
+}
